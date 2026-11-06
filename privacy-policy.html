@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy | Dopamine Detox</title>
+  <meta name="description" content="Dopamine Detox stores your settings locally in your browser. It does not collect, send or share any data.">
+  <style>
+    :root {
+      --bg: #111214;
+      --surface: #1c1e21;
+      --border: #333;
+      --text: #f0f2f5;
+      --muted: #b0b3b8;
+      --gold: #ecca69;
+      --serif: Georgia, "Times New Roman", serif;
+      --sans: system-ui, -apple-system, "Segoe UI", sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--sans);
+      font-size: 17px;
+      line-height: 1.65;
+    }
+    main { max-width: 720px; margin: 0 auto; padding: 56px 24px 72px; }
+    h1, h2 { font-family: var(--serif); font-weight: normal; line-height: 1.25; }
+    h1 { margin: 0 0 8px; font-size: 40px; color: var(--gold); }
+    h2 { margin: 44px 0 12px; font-size: 25px; }
+    p, ul { margin: 0 0 16px; }
+    li { margin-bottom: 8px; }
+    a { color: var(--gold); }
+    code { font-size: 0.92em; overflow-wrap: anywhere; }
+    .date { margin-bottom: 32px; color: var(--muted); }
+    .summary {
+      padding: 20px 24px;
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--gold);
+      border-radius: 6px;
+      background: var(--surface);
+    }
+    .summary p { margin: 0; }
+    .table-wrap { overflow-x: auto; margin-bottom: 16px; }
+    table { width: 100%; border-collapse: collapse; font-size: 16px; }
+    th, td { padding: 10px 12px; border-bottom: 1px solid var(--border); text-align: left; vertical-align: top; }
+    th { color: var(--muted); font-weight: 600; }
+    footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--border); color: var(--muted); font-size: 15px; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Privacy Policy</h1>
+    <p class="date">Dopamine Detox &middot; Effective November 6, 2026</p>
+
+    <div class="summary">
+      <p><strong>Dopamine Detox does not collect, send or share any data.</strong> Your settings and stats stay in your browser. We never receive them.</p>
+    </div>
+
+    <h2>Who this policy covers</h2>
+    <p>This policy applies to the Dopamine Detox browser extension, published by Cybershift Labs ("we").</p>
+
+    <h2>What we collect</h2>
+    <p>Nothing. The extension has no accounts, analytics, tracking, advertising or remote code, and it makes no network requests of its own.</p>
+
+    <h2>What is stored on your device</h2>
+    <p>The extension needs a small amount of information to work. It is kept in your browser's local extension storage (<code>chrome.storage.local</code>), which the extension does not sync or upload.</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Item</th><th>Why</th><th>Kept for</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Lock end time</td><td>Keeps a lock running across tabs and restarts</td><td>Until replaced by your next lock</td></tr>
+          <tr><td>Built-in sites you turned off</td><td>Applies your site choices</td><td>Until you turn them back on</td></tr>
+          <tr><td>Custom sites you added (domain names only)</td><td>Blocks the sites you chose</td><td>Until you remove them</td></tr>
+          <tr><td>Schedules</td><td>Starts locks at the times you set</td><td>Until you delete them</td></tr>
+          <tr><td>Daily count of blocked visits</td><td>Shows your stats</td><td>30 days</td></tr>
+          <tr><td>Dates a lock was active</td><td>Shows your streaks</td><td>Up to 400 days</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Blocked visits are stored as a number per day. The extension does not record which pages you tried to visit.</p>
+    <p>It also keeps a temporary note of whether a lock is active and which sites it covers (<code>chrome.storage.session</code>). Your browser clears this when it closes.</p>
+
+    <h2>How website addresses are used</h2>
+    <p>The extension only acts on the built-in sites and any custom sites you add. When one of them is locked, it redirects the page to the extension's lock screen before the site loads, and does the same for any tabs already open on that site.</p>
+    <p>The original address is passed to the lock screen so it can show the site's name and offer a link back when the lock ends. That address stays on your device, and the extension does not save it.</p>
+
+    <h2>Permissions</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Permission</th><th>Why it is needed</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><code>storage</code></td><td>Saves the settings and stats listed above on your device.</td></tr>
+          <tr><td><code>declarativeNetRequest</code></td><td>Redirects locked sites to the lock screen before they load.</td></tr>
+          <tr><td><code>alarms</code></td><td>Starts and ends locks on time and updates the countdown on the icon.</td></tr>
+          <tr><td>Access to facebook.com, fb.com, messenger.com, instagram.com, threads.net and threads.com</td><td>Redirects those sites and locks tabs that are already open.</td></tr>
+          <tr><td>Optional access to other sites</td><td>Requested only when you add a custom site, and only for that site. Removed when you remove the site.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>Sharing and sale of data</h2>
+    <p>We do not sell, transfer or share user data, because we do not have any. No third party receives data from the extension.</p>
+
+    <h2>Your choices</h2>
+    <p>You can change your sites and schedules in the extension's options at any time, although some changes are unavailable during a lock. Uninstalling the extension removes all of the data it stored from your browser.</p>
+    <p>Because we hold no data about you, there is nothing for us to access, correct, export or delete on our side.</p>
+
+    <h2>Children</h2>
+    <p>The extension collects no personal information from anyone, including children.</p>
+
+    <h2>Your browser and other sites</h2>
+    <p>This policy covers the extension only. Your browser, its extension store and the websites you visit have their own privacy policies.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>If this policy changes, we will update this page and its effective date.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about this policy can be raised on our <a href="https://github.com/ghughes13/dopamine-detox/issues">GitHub issues page</a>.</p>
+
+    <footer>&copy; 2026 Cybershift Labs</footer>
+  </main>
+</body>
+</html>
